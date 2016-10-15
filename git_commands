@@ -1,4 +1,23 @@
-// To recover from remote repository the local files deleted
+/************************************************
+	 Pushing file to remote repository
+*************************************************/
+// First configure git
+git config user.name  <name>
+git config user.email <email>
+
+// Add file, I think only need to be added once. Every new file must be added.
+git add <new_file>
+
+git commit -m <comment>
+
+// This action will ask for user and password
+git push -u origin master
+
+
+/***************************************************
+	Recovering local files deleted
+****************************************************/
+// To recover files from remote repository
 //if there wasn´t any commit
 git checkout HEAD <path>
 
