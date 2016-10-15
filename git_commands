@@ -17,6 +17,13 @@ git remote add origin https://github.com/<user>/<repository>.git
 // This action will ask for user and password
 git push -u origin master
 
+
+/**************************************************
+	Pulling
+**************************************************/
+// Pull file to update local folder
+git pull https://github.com/<User>/<repository>
+
 /***************************************************
 	Creating branch
 ****************************************************/
