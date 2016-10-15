@@ -1,5 +1,5 @@
-// To recover local files deleted, pull from remote repository
-// if there wasn´t any commit
+// To recover from remote repository the local files deleted
+//if there wasn´t any commit
 git checkout HEAD <path>
 
 // if there was a commit
