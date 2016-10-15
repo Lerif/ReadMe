@@ -14,6 +14,10 @@ git commit -m <comment>
 // This action will ask for user and password
 git push -u origin master
 
+/***************************************************
+	Creating branch
+****************************************************/
+
 
 /***************************************************
 	Recovering local files deleted
