@@ -1,0 +1,40 @@
+/************************************************
+	 Pushing file to remote repository
+*************************************************/
+// First configure git
+git config user.name  <name>
+git config user.email <email>
+
+// Add file, I think only need to be added once. Every new file must be added.
+// Now I think Im wrong, maybe all file modified needs to be added
+git add <new_file>
+
+git commit -m <comment>
+
+// Tell repository to push on
+git remote add origin https://github.com/<user>/<repository>.git
+
+// This action will ask for user and password
+git push -u origin master
+
+
+/**************************************************
+	Pulling
+**************************************************/
+// Pull file to update local folder
+git pull https://github.com/<User>/<repository>
+
+/***************************************************
+	Creating branch
+****************************************************/
+
+
+/***************************************************
+	Recovering local files deleted
+****************************************************/
+// To recover files from remote repository
+//if there wasn´t any commit
+git checkout HEAD <path>
+
+// if there was a commit
+git checkout HEAD^ <path>
