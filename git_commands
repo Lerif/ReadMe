@@ -6,6 +6,7 @@ git config user.name  <name>
 git config user.email <email>
 
 // Add file, I think only need to be added once. Every new file must be added.
+// Now I think Im wrong, maybe all file modified needs to be added
 git add <new_file>
 
 git commit -m <comment>
