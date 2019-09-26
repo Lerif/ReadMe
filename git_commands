@@ -5,13 +5,12 @@
 git config user.name  <name>
 git config user.email <email>
 
-# Add file, I think only need to be added once. Every new file must be added.
-# Now I think Im wrong, maybe all file modified needs to be added
+# Add files to be commited
 git add <new_file>
 
 git commit -m <comment>
 
-# Tell repository to push on
+# Tell wich repository to push on
 git remote add origin https://github.com/<user>/<repository>.git
 
 # This action will ask for user and password
@@ -20,7 +19,7 @@ git push -u origin master
 /**************************************************
 	Pulling
 **************************************************/
-# Pull file to update local folder
+# Pull file to update local files
 git pull https://github.com/<User>/<repository>
 
 /***************************************************
@@ -29,22 +28,19 @@ git pull https://github.com/<User>/<repository>
 # See all branches
 git branch
 
-# To switch branches
+# Switch to new a local branche
 git checkout -b <branch_name>
 
 # Pushing on the new branch
 git push origin <branch_name>
 
 # Update your branch when the original branch from official repository has been update
-
 git fetch <name_of_your_remote>
 
 # Delete a branch on your local filesystem
-
 git branch -d [name_of_your_new_branch]
 
 # To force the deletion of local branch on your filesystem
-
 git branch -D [name_of_your_new_branch]
 
 
